@@ -21,6 +21,13 @@ var connectFour = {
     checkFullColumn: function (event) {
 
     },
+    changePlayer: function () {
+        if (connectFour.playerTurn === 1) {
+            connectFour.playerTurn = 2;
+        } else if (connectFour.playerTurn === 2) {
+            connectFour.playerTurn = 1;
+        }
+    },
     updateGamePieceDisplay: function () {
         for (var i = 0; i < connectFour.gridArray.length; i++) {
             for (var j = 0; j < connectFour.gridArray[i].length; j++) {
@@ -39,7 +46,7 @@ var connectFour = {
         var buttonNumber = parseInt(event.target.dataset.button);
         connectFour.addValuetoArray(buttonNumber);
         connectFour.updateGamePieceDisplay();
-        // connectFour.changePlayer();
+        connectFour.changePlayer();
     },
 };
 
