@@ -22,15 +22,13 @@ var connectFour = {
 
     },
     updateGamePieceDisplay: function () {
-        console.log("I am working");
         for (var i = 0; i < connectFour.gridArray.length; i++) {
             for (var j = 0; j < connectFour.gridArray[i].length; j++) {
                 if (connectFour.gridArray[i][j] === 1) {
-                    var gamePieceCoordinate = '"' + '#' + i + '-' + j + '"';
-                    console.log(gamePieceCoordinate);
+                    var gamePieceCoordinate = '#' + i + '-' + j;
                     $(gamePieceCoordinate).css("background-color", "red");
                 } else if (connectFour.gridArray[i][j] === 2) {
-                    var gamePieceCoordinate = '"' + '#' + i + '-' + j + '"';
+                    var gamePieceCoordinate = '#' + i + '-' + j;
                     console.log(gamePieceCoordinate);
                     $(gamePieceCoordinate).css("background-color", "black");
             }
