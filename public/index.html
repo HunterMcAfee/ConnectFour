@@ -12,14 +12,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1>Connect Four</h1>
+                <h1>CONNECT FOUR</h1>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6">
                 <h2>How To Play</h2>
-                <p>Game Rules and Description</p>
+                <p>This is a two player game where each player adds a token to a slot while attempting to get four tokens in a row (horizontally, vertically, or diagonally).
+                    The first player to get four tokens in a row is the winner.  Click the drop button to drop a token in the slot.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 gameDisplay">
+                <p></p>
             </div>
         </div>
 
@@ -49,7 +57,7 @@
 
 <!-- ROW ONE -->
         <div class="row">
-            <div class="col-xs-1 gridBox">
+            <div class="col-xs-1 gridBox gridTopLeft">
                 <div class="gamePiece" id="0-0">
                 </div>
             </div>
@@ -73,7 +81,7 @@
                 <div class="gamePiece" id="5-0">
                 </div>
             </div>
-            <div class="col-xs-1 gridBox">
+            <div class="col-xs-1 gridBox gridTopRight">
                 <div class="gamePiece" id="6-0">
                 </div>
             </div>
@@ -209,7 +217,7 @@
 
  <!-- ROW SIX -->
         <div class="row">
-            <div class="col-xs-1 gridBox">
+            <div class="col-xs-1 gridBox gridBottomLeft">
                 <div class="gamePiece" id="0-5">
                 </div>
             </div>
@@ -233,17 +241,13 @@
                 <div class="gamePiece" id="5-5">
                 </div>
             </div>
-            <div class="col-xs-1 gridBox">
+            <div class="col-xs-1 gridBox gridBottomRight">
                 <div class="gamePiece" id="6-5">
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-6 gameDisplay">
-                <p>Game Display</p>
-            </div>
-        </div>
+        <br>
+        <br>
 
     </div>
 

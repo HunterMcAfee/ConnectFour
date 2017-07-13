@@ -51,9 +51,11 @@ var connectFour = {
         for (var i = 0; i < 4; i++) {
             for (var j = 0; j < connectFour.gridArray[i].length; j++) {
                 if ((connectFour.gridArray[i][j] + connectFour.gridArray[i + 1][j] + connectFour.gridArray[i + 2][j] + connectFour.gridArray[i + 3][j]) === 4) {
-                    console.log("Player One wins!");
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player One wins!</h2>");
                 } else if ((connectFour.gridArray[i][j] + connectFour.gridArray[i + 1][j] + connectFour.gridArray[i + 2][j] + connectFour.gridArray[i + 3][j]) === 20) {
-                    console.log("Player Two wins!");   
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player Two wins!</h2>");   
                 }
             }
         }
@@ -62,9 +64,11 @@ var connectFour = {
         for (var i = 0; i < connectFour.gridArray.length; i++) {
             for (var j = 0; j < 3; j++) {
                 if ((connectFour.gridArray[i][j] + connectFour.gridArray[i][j + 1] + connectFour.gridArray[i][j + 2] + connectFour.gridArray[i][j + 3]) === 4) {
-                    console.log("Player One wins!"); 
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player One wins!</h2>"); 
                 } else if ((connectFour.gridArray[i][j] + connectFour.gridArray[i][j + 1] + connectFour.gridArray[i][j + 2] + connectFour.gridArray[i][j + 3]) === 20) {
-                    console.log("Player Two wins!"); 
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player Two wins!</h2>"); 
                 }
             }
         }
@@ -73,9 +77,11 @@ var connectFour = {
         for (var i = 0; i < 4; i++) {
             for (var j = 3; j < 6; j++) {
                 if ((connectFour.gridArray[i][j] + connectFour.gridArray[i + 1][j - 1] + connectFour.gridArray[i + 2][j - 2] + connectFour.gridArray[i + 3][j - 3]) === 4) {
-                    console.log("Player One wins!"); 
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player One wins!</h2>"); 
                 } else if ((connectFour.gridArray[i][j] + connectFour.gridArray[i + 1][j - 1] + connectFour.gridArray[i + 2][j - 2] + connectFour.gridArray[i + 3][j - 3]) === 20) {
-                    console.log("Player Two wins!"); 
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player Two wins!</h2>"); 
                 }
             }
         }
@@ -84,9 +90,11 @@ var connectFour = {
         for (var i = 0; i < 4; i++) {
             for (var j = 0; j < 3; j++) {
                 if ((connectFour.gridArray[i][j] + connectFour.gridArray[i + 1][j + 1] + connectFour.gridArray[i + 2][j + 2] + connectFour.gridArray[i + 3][j + 3]) === 4) {
-                    console.log("Player One wins!"); 
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player One wins!</h2>");
                 } else if ((connectFour.gridArray[i][j] + connectFour.gridArray[i + 1][j + 1] + connectFour.gridArray[i + 2][j + 2] + connectFour.gridArray[i + 3][j + 3]) === 20) {
-                    console.log("Player Two wins!"); 
+                    $(".gameDisplay").html("");
+                    $(".gameDisplay").html("<h2>Player Two wins!</h2>");
                 }
             }
         }
@@ -97,8 +105,9 @@ var connectFour = {
         connectFour.updateGamePieceDisplay();
         connectFour.changePlayer();
         connectFour.checkForWin();
-    },
+    }
 };
 
 $(".buttons").click(connectFour.addGamePiece);
+
 
