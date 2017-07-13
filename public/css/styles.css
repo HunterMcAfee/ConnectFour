@@ -34,7 +34,7 @@
     justify-content: center;
 }
 .buttons {
-    background-color: black;
+    background-color: rgb(64, 64, 64);
     color: white;
     border: none;
     padding-right: 5px;
@@ -45,17 +45,17 @@
 }
 
 .gridTopLeft {
-    border-top-left-radius: 15px;
+    border-top-left-radius: 10px;
 }
 
 .gridTopRight {
-    border-top-right-radius: 15px;
+    border-top-right-radius: 10px;
 }
 .gridBottomLeft {
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 10px;
 }
 
 .gridBottomRight {
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 10px;
 }
 

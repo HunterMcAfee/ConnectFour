@@ -18,11 +18,11 @@ var connectFour = {
             }
         }
     },
-    checkFullColumn: function (event) {
-
-    },
-    changePlayer: function () {
-        if (connectFour.playerTurn === 1) {
+    changePlayer: function (buttonNumber) {
+        if (connectFour.gridArray[buttonNumber][0] !==  0) {
+                $(".gameDisplay").html("");
+                $(".gameDisplay").html("<h2>This column is full! Choose another!</h2>");
+        } else if (connectFour.playerTurn === 1) {
             connectFour.playerTurn = 5;
         } else if (connectFour.playerTurn === 5) {
             connectFour.playerTurn = 1;
@@ -101,9 +101,9 @@ var connectFour = {
     },
     addGamePiece: function (event) {
         var buttonNumber = parseInt(event.target.dataset.button);
+        connectFour.changePlayer(buttonNumber);
         connectFour.addValuetoArray(buttonNumber);
         connectFour.updateGamePieceDisplay();
-        connectFour.changePlayer();
         connectFour.checkForWin();
     }
 };
