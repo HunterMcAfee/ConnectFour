@@ -27,6 +27,7 @@ var connectFour = {
         } else if (connectFour.playerTurn === 2) {
             connectFour.playerTurn = 1;
         }
+        // Probably need to change player 2 value out of range of the sum of player one's tokens
     },
     updateGamePieceDisplay: function () {
         for (var i = 0; i < connectFour.gridArray.length; i++) {
