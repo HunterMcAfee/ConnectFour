@@ -23,11 +23,10 @@ var connectFour = {
     },
     changePlayer: function () {
         if (connectFour.playerTurn === 1) {
-            connectFour.playerTurn = 2;
-        } else if (connectFour.playerTurn === 2) {
+            connectFour.playerTurn = 5;
+        } else if (connectFour.playerTurn === 5) {
             connectFour.playerTurn = 1;
         }
-        // Probably need to change player 2 value out of range of the sum of player one's tokens
     },
     updateGamePieceDisplay: function () {
         for (var i = 0; i < connectFour.gridArray.length; i++) {
@@ -35,7 +34,7 @@ var connectFour = {
                 if (connectFour.gridArray[i][j] === 1) {
                     var gamePieceCoordinate = '#' + i + '-' + j;
                     $(gamePieceCoordinate).css("background-color", "red");
-                } else if (connectFour.gridArray[i][j] === 2) {
+                } else if (connectFour.gridArray[i][j] === 5) {
                     var gamePieceCoordinate = '#' + i + '-' + j;
                     $(gamePieceCoordinate).css("background-color", "black");
             }
