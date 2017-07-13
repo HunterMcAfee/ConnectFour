@@ -36,7 +36,6 @@ var connectFour = {
                     $(gamePieceCoordinate).css("background-color", "red");
                 } else if (connectFour.gridArray[i][j] === 2) {
                     var gamePieceCoordinate = '#' + i + '-' + j;
-                    console.log(gamePieceCoordinate);
                     $(gamePieceCoordinate).css("background-color", "black");
             }
         }
