@@ -28,15 +28,18 @@ var connectFour = {
             connectFour.playerTurn = 1;
         }
     },
+    updateGameFeed: function () {
+        $(".gameDisplay").html("");
+    },
     updateGamePieceDisplay: function () {
         for (var i = 0; i < connectFour.gridArray.length; i++) {
             for (var j = 0; j < connectFour.gridArray[i].length; j++) {
                 if (connectFour.gridArray[i][j] === 1) {
                     var gamePieceCoordinate = '#' + i + '-' + j;
-                    $(gamePieceCoordinate).css("background-color", "red");
+                    $(gamePieceCoordinate).css("background-color", "rgba(255, 0, 0, 0.9)");
                 } else if (connectFour.gridArray[i][j] === 5) {
                     var gamePieceCoordinate = '#' + i + '-' + j;
-                    $(gamePieceCoordinate).css("background-color", "black");
+                    $(gamePieceCoordinate).css("background-color", "rgba(0, 0, 0, 0.9)");
             }
         }
         }
@@ -101,6 +104,7 @@ var connectFour = {
     },
     addGamePiece: function (event) {
         var buttonNumber = parseInt(event.target.dataset.button);
+        connectFour.updateGameFeed();
         connectFour.changePlayer(buttonNumber);
         connectFour.addValuetoArray(buttonNumber);
         connectFour.updateGamePieceDisplay();
