@@ -30,6 +30,13 @@ var connectFour = {
             connectFour.playerTurn = 1;
         }
     },
+    updateCurrentTurn: function () {
+        if (connectFour.playerTurn === 1) {
+            $(".currentTurn").html("Player Two");
+        } else if (connectFour.playerTurn === 5) {
+            $(".currentTurn").html("Player One");
+        }
+    },
     updateGameFeed: function () {
         $(".gameDisplay").html("");
     },
@@ -140,6 +147,7 @@ var connectFour = {
         connectFour.updateGamePieceDisplay();
         connectFour.checkForWin();
         connectFour.updatePlayerWins();
+        connectFour.updateCurrentTurn();
     }
 };
 
