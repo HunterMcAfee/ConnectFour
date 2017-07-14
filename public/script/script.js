@@ -1,6 +1,6 @@
 
 var connectFour = {
-    playerTurn: 1,
+    playerTurn: 5,
     winsPlayerOne: 0,
     winsPlayerTwo: 0,
     gridArray: [
@@ -146,8 +146,8 @@ var connectFour = {
         connectFour.addValuetoArray(buttonNumber);
         connectFour.updateGamePieceDisplay();
         connectFour.checkForWin();
-        connectFour.updatePlayerWins();
         connectFour.updateCurrentTurn();
+        connectFour.updatePlayerWins();
     }
 };
 
