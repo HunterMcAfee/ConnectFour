@@ -40,8 +40,11 @@ var connectFour = {
                 } else if (connectFour.gridArray[i][j] === 5) {
                     var gamePieceCoordinate = '#' + i + '-' + j;
                     $(gamePieceCoordinate).css("background-color", "rgba(0, 0, 0, 0.9)");
+                } else if (connectFour.gridArray[i][j] === 0) {
+                    var gamePieceCoordinate = '#' + i + '-' + j;
+                    $(gamePieceCoordinate).css("background-color", "rgba(255, 255, 255, 1)");
+                }
             }
-        }
         }
     },
     checkForWin: function () {
@@ -102,6 +105,19 @@ var connectFour = {
             }
         }
     },
+    resetGame: function () {
+        connectFour.gridArray = [
+            [0, 0, 0, 0, 0, 0,],
+            [0, 0, 0, 0, 0, 0,],
+            [0, 0, 0, 0, 0, 0,],
+            [0, 0, 0, 0, 0, 0,],
+            [0, 0, 0, 0, 0, 0,],
+            [0, 0, 0, 0, 0, 0,],
+            [0, 0, 0, 0, 0, 0,],
+            ]
+        connectFour.updateGamePieceDisplay();
+        $(".gameDisplay").html("");
+    },
     addGamePiece: function (event) {
         var buttonNumber = parseInt(event.target.dataset.button);
         connectFour.updateGameFeed();
@@ -113,5 +129,4 @@ var connectFour = {
 };
 
 $(".buttons").click(connectFour.addGamePiece);
-
-
+$(".resetButton").click(connectFour.resetGame);
