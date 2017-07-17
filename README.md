@@ -1,7 +1,7 @@
 # Project_1_ConnectFour
 ## Overview
 
-For Project 1, a game of Connect Four was built.
+The game I built for Project 1 was Connect Four.
 
 When the player arrives at the site, they will see the title along with a how to play section on the rules and functionality.  Whenever one of the players presses a drop button, it will populate that respective column with that player's game piece (ex. red or black).  Once a player achieves four game pieces in a row (horizontally, vertically, or diagonally), the page will display dialogue for the player that one.  The game comes with a scoreboard that keeps track of each player's win count.  There is an indicator that displays the current players turn.  Lastly, there is a button that will reset the game board so it can be played again.
 
@@ -18,13 +18,13 @@ When the player arrives at the site, they will see the title along with a how to
 ## Features
 
   * Scoreboard
-  * Current layer indicator
+  * Current player indicator
   * Reset game button
 
 
 ## Wireframe
 
-![Wireframe]()
+![Wireframe](https://app.box.com/s/iu7phxony9u2z0ua6w4fpiyfefy41q24)
 
 
 ## Future Development
