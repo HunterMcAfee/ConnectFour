@@ -150,6 +150,6 @@ var connectFour = {
         connectFour.updatePlayerWins();
     }
 };
-
+// Reverting to last good commit
 $(".buttons").click(connectFour.addGamePiece);
 $(".resetButton").click(connectFour.resetGame);
