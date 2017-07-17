@@ -24,7 +24,7 @@ When the player arrives at the site, they will see the title along with a how to
 
 ## Wireframe
 
-![Wireframe](https://app.box.com/s/iu7phxony9u2z0ua6w4fpiyfefy41q24)
+![Wireframe](http://i.imgur.com/SRfsRx5.jpg)
 
 
 ## Future Development
