@@ -11,7 +11,7 @@ When the player arrives at the site, they will see the game title and a how to p
 
   * Languages - HTML5, CSS3, Javascript, jQuery
   * Design - Bootstrap
-  * Project Planning & User Stories - [Trello](hhttps://trello.com/b/thblLg4u/project-1)
+  * Project Planning & User Stories - [Trello](https://trello.com/b/thblLg4u/project-1)
   * Visual Studio Code
 
 
